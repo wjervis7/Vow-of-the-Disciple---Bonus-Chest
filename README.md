@@ -16,3 +16,10 @@ This bonus drop, is once **PER WEEK**, **PER ACCOUNT**.
 The symbols only count, if they are activated.  You can activate the wrong symbol, as long as you deactivate it, by shooting it, again.
 
 The raid must be completed, in a single sitting, similar to Divinity.
+
+You can view the symbols, and where to find them, [here][rooms].
+
+You can use this [helper], to select the symbols, and see where the rooms are, while you are in a Vow of the Disciple run.
+
+[rooms]: Rooms.md ""
+[helper]: helper.html ""
