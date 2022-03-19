@@ -19,4 +19,4 @@ Vue.createApp({
             symbol3: null
         }
     }
-}).mount("app");
+}).mount("#app");
