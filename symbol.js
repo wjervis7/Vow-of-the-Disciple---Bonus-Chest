@@ -7,9 +7,9 @@ export default {
     },
     template: `
     <div>
-        <img :src="symbol.image" :alt="symbol.symbol" />
-        <span>{{ symbol.location }}</span> -
-        {{ symbol.description }}
+        <img :src="image" :alt="symbol" />
+        <span>{{ location }}</span> -
+        {{ description }}
     </div>`
 }
 
