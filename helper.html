@@ -13,47 +13,29 @@ title: Vow of the Disciple - Bonus Chest
     <div id="app">
         Select your symbols, below:
 
-        Symbol 1
-        <select v-model="symbol1">
-            <option v-for="symbol in symbols" :value="symbol.symbol">
-                {{symbol.symbol}}
-            </option>
+        <label for="symbol1">Symbol 1</label>
+        <select id="symbol1" v-model="symbol1">
+            <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
         </select>
 
-        Symbol 2
-        <select v-model="symbol2">
-            <option v-for="symbol in symbols" :value="symbol.symbol">
-                {{symbol.symbol}}
-            </option>
+        <label for="symbol2">Symbol 2</label>
+        <select id="symbol2" v-model="symbol2">
+            <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
         </select>
 
-        Symbol 3:
-        <select v-model="symbol3">
-            <option v-for="symbol in symbols" :value="symbol.symbol">
-                {{symbol.symbol}}
-            </option>
+        <label for="symbol3">Symbol 3:</label>
+        <select id="symbol3" v-model="symbol3">
+            <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
         </select>
 
-        <div v-if="symbol1">
-            <img :href="symbolImage(symbol1)" :alt="symbol(symbol1)" />
-            <span>{{symbolLocation(symbol1)}}</span> -
-            {{symbolDescription(symbol1)}}
-        </div>
+        <symbol v-if="symbol1" :symbol="getSymbol(symbol1)"></symbol>
 
-        <div v-if="symbol2">
-            <img :href="symbolImage(symbol2)" :alt="symbol(symbol2)" />
-            <span>{{symbolLocation(symbol2)}}</span> -
-            {{symbolDescription(symbol2)}}
-        </div>
+        <symbol v-if="symbol2" :symbol="getSymbol(symbol2)"></symbol>
 
-        <div v-if="symbol3">
-            <img :href="symbolImage(symbol3)" :alt="symbol(symbol3)" />
-            <span>{{symbolLocation(symbol3)}}</span> -
-            {{symbolDescription(symbol3)}}
-        </div>
+        <symbol v-if="symbol3" :symbol="getSymbol(symbol3)"></symbol>
     </div>
     <script src="https://unpkg.com/vue@3"></script>
-    <script src="helper.js"></script>
+    <script type="module" src="helper.js"></script>
 </body>
 
 </html>

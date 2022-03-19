@@ -1,3 +1,5 @@
+import symbol from "./symbol.js";
+
 const symbols = [
     { "symbol": "Pyramid", "image": "symbols/pyramid-captioned.png", "location": "After Disciples Bog, before 1st encounter", "description": "Immeadiately after you drop down into the Pyramid, the door is the opposite direction of the 1st encounter. The switch is right next to the door." },
     { "symbol": "Give", "image": "symbols/give-captioned.png", "location": "After Disciples Bog, before 1st encounter", "description": "In the room immeadiately before the first encounter, the room with frozen silhouettes. The Door is on the left side of the room, if you're facing the main exit. The switch is right next to the door." },
@@ -13,6 +15,9 @@ const symbols = [
 const getSymbol = symbol => symbols.find(s => s.symbol === symbol);
 
 Vue.createApp({
+    components: {
+        symbol
+    },
     data() {
         return {
             symbols,
