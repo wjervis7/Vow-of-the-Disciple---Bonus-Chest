@@ -10,7 +10,47 @@ title: Vow of the Disciple - Bonus Chest
 </head>
 
 <body>
-    blah
+    <div id="app">
+        Select your symbols, below:
+
+        Symbol 1
+        <select v-model="symbol1">
+            <option v-for="symbol in symbols" :value="symbol">
+                {{symbol.symbol}}
+            </option>
+        </select>
+
+        Symbol 2
+        <select v-model="symbol2">
+            <option v-for="symbol in symbols" :value="symbol">
+                {{symbol.symbol}}
+            </option>
+        </select>
+
+        Symbol 3:
+        <select v-model="symbol3">
+            <option v-for="symbol in symbols" :value="symbol">
+                {{symbol.symbol}}
+            </option>
+        </select>
+
+        <div>
+            <img :href="symbol1.image" :alt="symbol1.symbol" /> <span>{{symbol1.location}}</span> -
+            {{symbol1.description}}
+        </div>
+
+        <div>
+            <img :href="symbol2.image" :alt="symbol2.symbol" /> <span>{{symbol2.location}}</span> -
+            {{symbol2.description}}
+        </div>
+
+        <div>
+            <img :href="symbol3.image" :alt="symbol3.symbol" /> <span>{{symbol3.location}}</span> -
+            {{symbol3.description}}
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="helper.js"></script>>
 </body>
 
 </html>
