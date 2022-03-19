@@ -1,6 +1,6 @@
+---
 title: Vow of the Disciple - Bonus Chest - About
-layout: page
-permalink: /
+---
 
 # Vow of the Disciple - Bonus Chest
 
