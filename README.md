@@ -1,6 +1,7 @@
 ---
 title: Vow of the Disciple - Bonus Chest - About
 ---
+
 # Vow of the Disciple - Bonus Chest
 
 After the payload escort section, as you enter the pyramid, there is a totem, with 3 symbols, on it.
