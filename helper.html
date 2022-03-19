@@ -34,23 +34,23 @@ title: Vow of the Disciple - Bonus Chest
             </option>
         </select>
 
-        <div>
+        <div v-if="symbol1">
             <img :href="symbol1.image" :alt="symbol1.symbol" /> <span>{{symbol1.location}}</span> -
             {{symbol1.description}}
         </div>
 
-        <div>
+        <div v-if="symbol2">
             <img :href="symbol2.image" :alt="symbol2.symbol" /> <span>{{symbol2.location}}</span> -
             {{symbol2.description}}
         </div>
 
-        <div>
+        <div v-if="symbol3">
             <img :href="symbol3.image" :alt="symbol3.symbol" /> <span>{{symbol3.location}}</span> -
             {{symbol3.description}}
         </div>
     </div>
     <script src="https://unpkg.com/vue@3"></script>
-    <script src="helper.js"></script>>
+    <script src="helper.js"></script>
 </body>
 
 </html>
