@@ -23,16 +23,16 @@ Vue.createApp({
     },
     methods: {
         symbol(symbol) {
-            return getSymbol(this[symbol]).symbol;
+            return getSymbol(symbol).symbol;
         },
         symbolImage(symbol) {
-            return getSymbol(this[symbol]).image;
+            return getSymbol(symbol).image;
         },
         symbolLocation(symbol) {
-            return getSymbol(this[symbol]).location;
+            return getSymbol(symbol).location;
         },
         symbolDescription(symbol) {
-            return getSymbol(this[symbol]).description;
+            return getSymbol(symbol).description;
         }
     }
 }).mount("#app");
