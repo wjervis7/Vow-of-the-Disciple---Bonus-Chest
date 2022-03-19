@@ -44,17 +44,21 @@ permalink: /helper
             </tr>
         </thead>
         <tbody>
-            <vow-symbol v-if="symbol1" :symbol="symbol1.symbol" :image="symbol1.image" :location="symbol1.location"
-                :description="symbol1.description">
-            </vow-symbol>
-
-            <vow-symbol v-if="symbol2" :symbol="symbol2.symbol" :image="symbol2.image" :location="symbol2.location"
-                :description="symbol2.description">
-            </vow-symbol>
-
-            <vow-symbol v-if="symbol3" :symbol="symbol3.symbol" :image="symbol3.image" :location="symbol3.location"
-                :description="symbol3.description">
-            </vow-symbol>
+            <tr>
+                <td><img :src="symbol1.image" :alt="symbol1.symbol" /></td>
+                <td>{% raw %}{{ symbol1.location }}{% endraw %}</td>
+                <td>{% raw %}{{ symbol1.description }}{% endraw %}</td>
+            </tr>
+            <tr>
+                <td><img :src="symbol2.image" :alt="symbol2.symbol" /></td>
+                <td>{% raw %}{{ symbol2.location }}{% endraw %}</td>
+                <td>{% raw %}{{ symbol2.description }}{% endraw %}</td>
+            </tr>
+            <tr>
+                <td><img :src="symbol3.image" :alt="symbol3.symbol" /></td>
+                <td>{% raw %}{{ symbol3.location }}{% endraw %}</td>
+                <td>{% raw %}{{ symbol3.description }}{% endraw %}</td>
+            </tr>
         </tbody>
     </table>
 </div>
