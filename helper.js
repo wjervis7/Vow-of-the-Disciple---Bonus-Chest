@@ -12,8 +12,6 @@ const symbols = [
     { "symbol": "Kill", "image": "symbols/kill-captioned.png", "location": "Between 3rd and 4th encounters", "description": "As you are going to 4th encounter, you'll get to a climbing section where enemies spawn, and there are three floors. The switch is floating against the back wall, and the door is on the right side of the top floor." }
 ];
 
-const getSymbol = symbol => symbols.find(s => s.symbol === symbol);
-
 Vue.createApp({
     components: {
         symbol
@@ -27,17 +25,6 @@ Vue.createApp({
         }
     },
     methods: {
-        symbol(symbol) {
-            return getSymbol(symbol).symbol;
-        },
-        symbolImage(symbol) {
-            return getSymbol(symbol).image;
-        },
-        symbolLocation(symbol) {
-            return getSymbol(symbol).location;
-        },
-        symbolDescription(symbol) {
-            return getSymbol(symbol).description;
-        }
+        getSymbol: symbol => symbols.find(s => s.symbol === symbol)
     }
 }).mount("#app");
