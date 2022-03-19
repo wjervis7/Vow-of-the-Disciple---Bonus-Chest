@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.1/solar/bootstrap.min.css"
+        integrity="sha512-kqhhxoqw6DBO92oVCiC5XipEsKg4YvhsjDMlwRRdJdShuDqrF9H99vlGZzAo3ORgOoBuDSqR5lK5zQw8G71R/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto justify-content-center">
+                {% for navItem in site.data.navigation %}
+                <li class="nav-item"><a class="nav-link {% if item.url == page.url %}active{% endif %}"
+                        href="{{ navItem.url }}">{{ navItem.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.min.js"
+        integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <div>
+        {{ content }}
+    </div>
+
+</body>
+
+</html>

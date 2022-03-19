@@ -1,45 +1,34 @@
 ---
-theme: jekyll-theme-cayman
 title: Vow of the Disciple - Bonus Chest
 ---
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+<div id="app">
+    Select your symbols, below:
 
-<body>
-    <div id="app">
-        Select your symbols, below:
+    <label for="symbol1">Symbol 1</label>
+    <select id="symbol1" v-model="symbol1Val">
+        <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
+    </select>
 
-        <label for="symbol1">Symbol 1</label>
-        <select id="symbol1" v-model="symbol1Val">
-            <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
-        </select>
+    <label for="symbol2">Symbol 2</label>
+    <select id="symbol2" v-model="symbol2Val">
+        <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
+    </select>
 
-        <label for="symbol2">Symbol 2</label>
-        <select id="symbol2" v-model="symbol2Val">
-            <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
-        </select>
+    <label for="symbol3">Symbol 3:</label>
+    <select id="symbol3" v-model="symbol3Val">
+        <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
+    </select>
 
-        <label for="symbol3">Symbol 3:</label>
-        <select id="symbol3" v-model="symbol3Val">
-            <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
-        </select>
+    <vow-symbol v-if="symbol1" :symbol="symbol1.symbol" :image="symbol1.image" :location="symbol1.location"
+        :description="symbol1.description"></vow-symbol>
 
-        <vow-symbol v-if="symbol1" :symbol="symbol1.symbol" :image="symbol1.image" :location="symbol1.location"
-            :description="symbol1.description"></vow-symbol>
+    <vow-symbol v-if="symbol2" :symbol="symbol2.symbol" :image="symbol2.image" :location="symbol2.location"
+        :description="symbol2.description"></vow-symbol>
 
-        <vow-symbol v-if="symbol2" :symbol="symbol2.symbol" :image="symbol2.image" :location="symbol2.location"
-            :description="symbol2.description"></vow-symbol>
+    <vow-symbol v-if="symbol3" :symbol="symbol3.symbol" :image="symbol3.image" :location="symbol3.location"
+        :description="symbol3.description"></vow-symbol>
 
-        <vow-symbol v-if="symbol3" :symbol="symbol3.symbol" :image="symbol3.image" :location="symbol3.location"
-            :description="symbol3.description"></vow-symbol>
-
-    </div>
-    <script src="https://unpkg.com/vue@3"></script>
-    <script type="module" src="helper.js"></script>
-</body>
-
-</html>
+</div>
+<script src="https://unpkg.com/vue@3"></script>
+<script type="module" src="helper.js"></script>
