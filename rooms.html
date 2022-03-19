@@ -1,0 +1,25 @@
+---
+title: Vow of the Disciple - Bonus Chest - Rooms
+permalink: /rooms
+---
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Location</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for symbol in site.data.symbols %}
+        <tr>
+            <td>{{ symbol.symbol }}</td>
+            <td>{{ symbol.image }}</td>
+            <td>{{ symbol.location }}</td>
+            <td>{{ symbol.description }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

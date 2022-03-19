@@ -6,11 +6,11 @@ export default {
         description: String
     },
     template: `
-    <div>
-        <img :src="image" :alt="symbol" />
-        <span>{{ location }}</span> -
-        {{ description }}
-    </div>`
+    <tr>
+        <td><img :src="image" :alt="symbol" /></td>
+        <td>{{ location }}</td>
+        <td>{{ description }}</td>
+    </tr>`
 }
 
 export const symbols = [
