@@ -1,6 +1,9 @@
 export default {
     props: {
-        symbol: Object
+        symbol: String,
+        image: String,
+        location: String,
+        description: String
     },
     template: `
     <div>
