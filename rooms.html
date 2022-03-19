@@ -17,7 +17,7 @@ permalink: /rooms
         {% for symbol in site.data.symbols %}
         <tr>
             <td>{{ symbol.symbol }}</td>
-            <td>{{ symbol.image }}</td>
+            <td><img src="{{ symbol.image }}" alt="{{ symbol.symbol }}" /></td>
             <td>{{ symbol.location }}</td>
             <td>{{ symbol.description }}</td>
         </tr>
