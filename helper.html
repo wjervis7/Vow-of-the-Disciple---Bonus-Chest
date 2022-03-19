@@ -14,25 +14,25 @@ title: Vow of the Disciple - Bonus Chest
         Select your symbols, below:
 
         <label for="symbol1">Symbol 1</label>
-        <select id="symbol1" v-model="symbol1">
+        <select id="symbol1" v-model="symbol1Val">
             <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
         </select>
 
         <label for="symbol2">Symbol 2</label>
-        <select id="symbol2" v-model="symbol2">
+        <select id="symbol2" v-model="symbol2Val">
             <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
         </select>
 
         <label for="symbol3">Symbol 3:</label>
-        <select id="symbol3" v-model="symbol3">
+        <select id="symbol3" v-model="symbol3Val">
             <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
         </select>
 
-        <symbol v-if="symbol1" :symbol="getSymbol(symbol1)"></symbol>
+        <symbol v-if="symbol1" :symbol="symbol1"></symbol>
 
-        <symbol v-if="symbol2" :symbol="getSymbol(symbol2)"></symbol>
+        <symbol v-if="symbol2" :symbol="symbol2"></symbol>
 
-        <symbol v-if="symbol3" :symbol="getSymbol(symbol3)"></symbol>
+        <symbol v-if="symbol3" :symbol="symbol3"></symbol>
     </div>
     <script src="https://unpkg.com/vue@3"></script>
     <script type="module" src="helper.js"></script>
