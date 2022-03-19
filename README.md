@@ -23,5 +23,5 @@ You can view the symbols, and where to find them, [here][rooms].
 
 You can use this [helper], to select the symbols, and see where the rooms are, while you are in a Vow of the Disciple run.
 
-[rooms]: /Rooms.md
-[helper]: /helper.html
+[rooms]: /rooms
+[helper]: /helper

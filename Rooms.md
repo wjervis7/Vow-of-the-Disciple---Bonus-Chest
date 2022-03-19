@@ -1,5 +1,6 @@
 ---
 title: Vow of the Disciple - Bonus Chest - Rooms
+permalink: /rooms
 ---
 
 | Name | Symbol | Location | Description |
