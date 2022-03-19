@@ -35,21 +35,21 @@ title: Vow of the Disciple - Bonus Chest
         </select>
 
         <div v-if="symbol1">
-            <img :href="symbolImage('symbol1')" :alt="symbol('symbol1')" />
-            <span>{{symbolLocation('symbol1')}}</span> -
-            {{symbolDescription('symbol1')}}
+            <img :href="symbolImage(symbol1)" :alt="symbol(symbol1)" />
+            <span>{{symbolLocation(symbol1)}}</span> -
+            {{symbolDescription(symbol1)}}
         </div>
 
         <div v-if="symbol2">
-            <img :href="symbolImage('symbol2')" :alt="symbol('symbol2')" />
-            <span>{{symbolLocation('symbol2')}}</span> -
-            {{symbolDescription('symbol2')}}
+            <img :href="symbolImage(symbol2)" :alt="symbol(symbol2)" />
+            <span>{{symbolLocation(symbol2)}}</span> -
+            {{symbolDescription(symbol2)}}
         </div>
 
         <div v-if="symbol3">
-            <img :href="symbolImage('symbol3')" :alt="symbol('symbol3')" />
-            <span>{{symbolLocation('symbol3')}}</span> -
-            {{symbolDescription('symbol3')}}
+            <img :href="symbolImage(symbol3)" :alt="symbol(symbol3)" />
+            <span>{{symbolLocation(symbol3)}}</span> -
+            {{symbolDescription(symbol3)}}
         </div>
     </div>
     <script src="https://unpkg.com/vue@3"></script>
