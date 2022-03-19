@@ -28,11 +28,15 @@ title: Vow of the Disciple - Bonus Chest
             <option v-for="symbol in symbols" :value="symbol.symbol" :label="symbol.symbol"></option>
         </select>
 
-        <symbol v-if="symbol1" :symbol="symbol1"></symbol>
+        <vow-symbol v-if="symbol1" :symbol="symbol1.symbol" :image="symbol1.image" :location="symbol1.location"
+            :description="symbol1.description"></vow-symbol>
 
-        <symbol v-if="symbol2" :symbol="symbol2"></symbol>
+        <vow-symbol v-if="symbol2" :symbol="symbol2.symbol" :image="symbol2.image" :location="symbol2.location"
+            :description="symbol2.description"></vow-symbol>
 
-        <symbol v-if="symbol3" :symbol="symbol3"></symbol>
+        <vow-symbol v-if="symbol3" :symbol="symbol3.symbol" :image="symbol3.image" :location="symbol3.location"
+            :description="symbol3.description"></vow-symbol>
+
     </div>
     <script src="https://unpkg.com/vue@3"></script>
     <script type="module" src="helper.js"></script>
